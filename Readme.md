@@ -1,6 +1,6 @@
-# Docker Container for updating a Cloudflare DNS record.
+# Docker Container for using Cloudflare as a Dynamic DNS Provider
 
-## Using this image.
+## Using this image
 
 ```zsh
 docker run --name cf-ddns -d \
@@ -11,3 +11,6 @@ docker run --name cf-ddns -d \
 -e RECORD="ddns.mydomain.com" \
 woodjme/cloudflare-ddns-docker
 ```
+*UPDATE_TIME in minutes.*
+
+https://hub.docker.com/r/woodjme/cloudflare-ddns-docker/
